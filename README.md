@@ -24,9 +24,9 @@ def deploycron(filename="", content="", override=False):
 > If you provide `filename`, then will install the crontabs in that file
 > otherwise install crontabs specified in content
 > 
-> filename - file contains crontab, one crontab for a line
-> content  - string that contains crontab, one crontab for a line
-> override - override the origin crontab
+> `filename` - file contains crontab, one crontab for a line
+> `content`  - string that contains crontab, one crontab for a line
+> `override` - override the origin crontab
 
 Example: 
 
@@ -36,7 +36,7 @@ from deploycron import deploycron
 # specify a filenmae
 deploycron(filename="/tmp/youcrontab.tab")
 
-# or just crontab content
+# or just specify crontab content
 deploycron(content="* * * * * echo hello > /tmp/hello")
 
 # if you want to overwrite the existing crontab, set `override` to True
