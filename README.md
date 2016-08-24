@@ -18,15 +18,15 @@ There's only one function in the package now,
 def deploycron(filename="", content="", override=False):
 ```
 
-> Install crontabs into the system if it's not installed.
-> This will not remove the other crontabs installed in the system if not specified
+> Install crontabs into the system if it's not installed.  
+> This will not remove the other crontabs installed in the system if not specified  
 > as override. It just merge the new one with the existing one.  
-> If you provide `filename`, then will install the crontabs in that file
-> otherwise install crontabs specified in content
+> If you provide `filename`, then will install the crontabs in that file  
+> otherwise install crontabs specified in content  
 > 
-> `filename` - file contains crontab, one crontab for a line
-> `content`  - string that contains crontab, one crontab for a line
-> `override` - override the origin crontab
+> `filename` - file contains crontab, one crontab for a line  
+> `content`  - string that contains crontab, one crontab for a line  
+> `override` - override the origin crontab  
 
 Example: 
 
